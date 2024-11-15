@@ -34,26 +34,34 @@
     <h1>Resources Page</h1>
  
 
-    <!-- Hidden Link 1: Found by hovering -->
+    
     <p>Yay!!  I knew you’d find this page.</p>  
         
     <p>There are hidden links to three articles that will tell you what you need to know.</p>  
 
     <p>Seriously though…if I don’t start getting some recognition for what I contribute at work, I might have to Att@ck first.  By the time this Empire strikes back, it’ll be too late.</p>
 
-    <p>I just hope I don’t get the <a href="https://hackread.com/uae-spying-journalists-activists-stealth-falcon-spyware/" style="text-decoration: none; color: inherit;">aax</a> after next week.</p>
+    <p>I just hope I don’t get the <span id="hiddenLink1"></span> after next week.</p>
 
-    <!-- Hidden Link 2: Found by inspecting image code -->
-     <img src="inspected.jpg" alt="Hidden Link Image">
+   
+    <img src="inspected.jpg" alt="Hidden Link Image">
     <p class="hidden-link">https://hackread.com/hackers-used-karma-tool-to-hack-iphones-of-govt-officials/</p>
 
+    
     <p>By the way, I got a fortune cookie today.</p>
     <p>The page inside read...</p>
     <p>"If you want good karma, always check the source"</p>
 
-    
-    <!-- Hidden Link 3: Hidden in the page source -->
-    <p class="hidden-link">https://hackread.com/hackers-used-karma-tool-to-hack-iphones-of-govt-officials/</p>
+  
+    <p id="hiddenLink3"></p>
+
+    <script>
+        // Dynamically adding Hidden Link 1
+        document.getElementById("hiddenLink1").innerHTML = '<a href="https://hackread.com/uae-spying-journalists-activists-stealth-falcon-spyware/" style="text-decoration: none; color: inherit;">aax</a>';
+
+        // Dynamically adding Hidden Link 3
+        document.getElementById("hiddenLink3").innerHTML = '<a href="https://hackread.com/hackers-used-karma-tool-to-hack-iphones-of-govt-officials/" class="hidden-link">Hidden Link 3</a>';
+    </script>
 
 </body>
 </html>
