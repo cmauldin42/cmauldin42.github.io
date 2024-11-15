@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+<body>
+    <h1>Welcome to My GitHub Pages Site</h1>
+    <p>This is the main page.</p>
+    <a href="resources.html" onclick="return passwordPrompt()">Go to Resources</a>
+
+    <script>
+        function passwordPrompt() {
+            let password = prompt("Enter password:");
+            // For demonstration, assume 'password123' is the correct password.
+            if (password === "password123") {
+                return true;
+            } else {
+                alert("Incorrect password.");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
